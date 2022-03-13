@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "codexm-debug",
+            "request": "launch",
+            "name": "Sample CodeXM Checker Configuration",
+            "targetedSourceFiles": [
+                "/Users/juanmanuellopez/.synopsys/desktop/cxm/sample/SampleSourceFile.js"
+            ],
+            "cxmFiles": [
+                "/Users/juanmanuellopez/.synopsys/desktop/cxm/sample/SampleChecker.cxm"
+            ],
+            "buildCommand": ""
+        }
+    ]
+}
