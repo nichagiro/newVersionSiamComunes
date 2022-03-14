@@ -29,20 +29,44 @@ const Data = (props) => {
                     <div className='card shadow p-2' style={{ color: '#484848' }}>
                         <h5 style={{ color: '#044E90' }}>Alertas más frecuentes</h5>
                         <div className='text-center my-2 text-truncate font-weight-bold'>
-                            <i className="fa fa-user fa-3x"></i> <br />
-                            <small>Adulto mayor fracturado = 5</small>
+                            <img
+                                src="https://www.gifsanimados.org/data/media/931/ventana-de-alerta-y-notificacion-imagen-animada-0007.gif"
+                                border="0"
+                                alt="alert siam"
+                                title="programing"
+                                height={'60px'}
+                            /> <br />
+                            <small>Programador Cansado = 5</small>
                         </div>
                         <div className='text-center my-2 text-truncate font-weight-bold'>
-                            <i className="fa fa-user fa-3x"></i> <br />
-                            <small>Adulto mayor fracturado = 5</small>
+                            <img
+                                src="https://www.gifsanimados.org/data/media/931/ventana-de-alerta-y-notificacion-imagen-animada-0007.gif"
+                                border="0"
+                                alt="alert siam"
+                                title="programing"
+                                height={'60px'}
+                            /> <br />
+                            <small>Programador Cansado = 5</small>
                         </div>
                         <div className='text-center my-2 text-truncate font-weight-bold'>
-                            <i className="fa fa-user fa-3x"></i> <br />
-                            <small>Adulto mayor fracturado = 5</small>
+                            <img
+                                src="https://www.gifsanimados.org/data/media/931/ventana-de-alerta-y-notificacion-imagen-animada-0007.gif"
+                                border="0"
+                                alt="alert siam"
+                                title="programing"
+                                height={'60px'}
+                            /> <br />
+                            <small>Programador Cansado = 5</small>
                         </div>
                         <div className='text-center my-2 text-truncate font-weight-bold'>
-                            <i className="fa fa-user fa-3x"></i> <br />
-                            <small>Adulto mayor fracturado = 5</small>
+                            <img
+                                src="https://www.gifsanimados.org/data/media/931/ventana-de-alerta-y-notificacion-imagen-animada-0007.gif"
+                                border="0"
+                                alt="alert siam"
+                                title="programing"
+                                height={'60px'}
+                            /> <br />
+                            <small>Programador Cansado = 5</small>
                         </div>
                     </div>
                 </div>

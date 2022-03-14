@@ -1,3 +1,5 @@
+import IconAlert from "../Components/Alerts/IconAlert";
+
 export const SetColumnsTable = (setColumns) => {
     const columns = [
         {
@@ -29,6 +31,7 @@ export const SetColumnsTable = (setColumns) => {
             text: "Alertas",
             sort: false,
             title: true,
+            formatter: IconAlert
         }
     ]
     setColumns(columns)

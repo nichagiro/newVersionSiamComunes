@@ -35,7 +35,7 @@ export const ClickPrint = (state, setState , {invalid}) => {
     if (invalid) {
         SetModal(state, setState, {
             title : 'NO SE PUEDE GENERAR EL REPORTE',
-            body : 'Debe registrar con exito los campos del filtro'
+            body : 'Debe registrar con exito los campos del filtro.'
         })
     }
     else{
