@@ -27,7 +27,7 @@ export const SetColumnsTable = (setColumns) => {
         {
             dataField: "alertas",
             text: "Alertas",
-            sort: true,
+            sort: false,
             title: true,
         }
     ]

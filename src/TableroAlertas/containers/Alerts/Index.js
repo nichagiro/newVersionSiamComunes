@@ -5,7 +5,7 @@ import { reduxForm as ReduxForm, change, submit, reset, getFormValues, untouch }
 import { connect } from "react-redux";
 
 // SIAM COMUNES COMPONENTS
-import { Form, Loading } from "siampluscomunes";
+import { Form } from "siampluscomunes";
 
 // HOOKS
 import { StoreContext } from "../../store/Store";
@@ -14,11 +14,12 @@ import { StoreContext } from "../../store/Store";
 import Filtros from "../../Components/Alerts/FIltros";
 import Data from "../../Components/Alerts/Data";
 import { isInvalid } from "redux-form";
+import Notificate from "../../Components/Comunes/Notificate";
 
 
 const HandleSubmit = values => {
     console.log(values)
- }
+}
 
 const Index = (props) => {
     const [state, setState] = useContext(StoreContext)
@@ -26,9 +27,9 @@ const Index = (props) => {
         <>
             <Form onSubmit={props.handleSubmit((values) => HandleSubmit(values))}>
                 <Filtros state={state} setState={setState} {...props} />
-                <Data state={state} setState={setState} {...props}/>
+                <Data state={state} setState={setState} {...props} />
             </Form>
-            <Loading display={false} />
+            <Notificate state={state} setState={setState} />
         </>
     )
 }

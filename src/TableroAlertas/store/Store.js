@@ -5,7 +5,10 @@ export default ({ children }) => {
     const [state, setState] = useState({
         alertas: {
             alertsSelecteds : []
-        }
+        },
+        permisos: {},
+        loading : false,
+        modal : false
     });
 
     return (

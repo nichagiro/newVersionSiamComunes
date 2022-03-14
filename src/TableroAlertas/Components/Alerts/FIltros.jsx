@@ -5,6 +5,7 @@ import { ClickPrint, FillData, SelectAlertTipos, SetAlertTips } from '../../Acti
 
 const Filtros = (props) => {
     const [alerts, setAlerts] = useState([])
+    const [checkeds, setCheckeds] = useState([])
 
     useEffect(() => {
         SetAlertTips(setAlerts)
@@ -26,7 +27,7 @@ const Filtros = (props) => {
                     endMaxDate={new Date()}
                 />
             </div>
-            <div className='row align-items-end'>
+            <div className='row'>
                 <div className='col-12 col-md-6'>
                     <Field
                         label="Tipos de alertas"
@@ -35,7 +36,7 @@ const Filtros = (props) => {
                         type="multiselect-field"
                         columns="col-12"
                         values={alerts}
-                        checkeds={[]}
+                        checkeds={checkeds}
                         rules={{ "required": true }}
                         change={props.change}
                         save={(data) => SelectAlertTipos(data, props.state, props.setState)}
@@ -45,14 +46,14 @@ const Filtros = (props) => {
                     <Button
                         title='Buscar'
                         icon='search'
-                        className='mx-2'
+                        className='mx-2 my-4'
                         type="submit"
                     />
                     <Button
                         title='Imprimir'
                         icon='print'
-                        className='mx-2'
-                        onClick={() => ClickPrint(props)}
+                        className='mx-2 my-4'
+                        onClick={() => ClickPrint(props.state, props.setState, props)}
                     />
                 </div>
             </div>

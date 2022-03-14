@@ -1,4 +1,5 @@
 import moment from "moment"
+import { SetModal } from "./Notificate"
 
 
 export const SelectAlertTipos = (data, state, setState) => {
@@ -29,10 +30,13 @@ export const SetAlertTips = setAlerts => {
     setAlerts(alert)
 }
 
-export const ClickPrint = ({invalid}) => {
+export const ClickPrint = (state, setState , {invalid}) => {
     // invalid "si el formulario tiene errores"
     if (invalid) {
-        alert('No se han usado los filtros para generar el reporte')
+        SetModal(state, setState, {
+            title : 'NO SE PUEDE GENERAR EL REPORTE',
+            body : 'Debe registrar con exito los campos del filtro'
+        })
     }
     else{
         console.log('generando reporte')
